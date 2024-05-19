@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Use a common font */
+    background: #fafafa;
+}
+nav{
+  background-image: url('images/navbacklight.jpg');
+}
+/* Centering container */
+.maineve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+/* Social link styles */
+.social-link {
+    width: 40px; /* Increase size for better touch target on mobile */
+    height: 40px; /* Increase size for better touch target on mobile */
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 1rem; /* Increase font size for better visibility on mobile */
+    margin: 0 5px; /* Add margin for better spacing */
+}
+
+/* Hover effect */
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+/* Progress bar styles */
+.progress {
+    height: 5px; /* Reduce height for better visibility on mobile */
+    width: 100%; /* Ensure full width */
+}
+
+/* Card body styles */
+.card-body {
+    position: relative;
+    bottom: 10px;
+}
+
+/* Link styles */
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for screens smaller than 768px (e.g., tablets and mobiles) */
+    .social-link {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+        margin: 0 3px;
+    }
+
+    .progress {
+        height: 3px;
+    }
+}
